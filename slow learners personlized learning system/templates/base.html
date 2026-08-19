@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="app-header">
+            <div>
+                <p class="tagline">Slow Learners Personalized Learning System</p>
+            </div>
+        </header>
+        <main class="content-card">
+            {% block content %}{% endblock %}
+        </main>
+        <footer class="app-footer">
+            Built to guide students with better habits, focus, and support.
+        </footer>
+    </div>
+</body>
+</html>

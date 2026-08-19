@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="1.0.1" encoding="UTF-8">
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hello! I am your personalized learning guide. I will ask a few questions to understand how I can help you.
+        </template>
+    </category>
+    <category>
+        <pattern>I AM A SLOW LEARNER</pattern>
+        <template>
+            I understand. Slow learning is a sign that you need a different pace and better focus. Let's find the best support for you.
+        </template>
+    </category>
+    <category>
+        <pattern>I AM NOT A SLOW LEARNER</pattern>
+        <template>
+            Great! You can still improve with consistent habits and practice. Here are some ideas.
+        </template>
+    </category>
+    <category>
+        <pattern>MATH</pattern>
+        <template>
+            Math can improve through short daily practice, working with examples, and asking for help when a step is unclear. Start with easier problems and build confidence.
+        </template>
+    </category>
+    <category>
+        <pattern>READING</pattern>
+        <template>
+            For reading, try breaking text into smaller parts, summarizing each paragraph, and reading aloud slowly. Practice with interesting stories and ask questions about what you read.
+        </template>
+    </category>
+    <category>
+        <pattern>WRITING</pattern>
+        <template>
+            Writing improves with planning before you write, practicing short sentences, and checking your work for clarity. Use outlines, ask for feedback, and write a little every day.
+        </template>
+    </category>
+    <category>
+        <pattern>ATTENTION</pattern>
+        <template>
+            To improve attention, reduce distractions, take short breaks, and focus on one task at a time. Use timers and repeat instructions in your own words.
+        </template>
+    </category>
+    <category>
+        <pattern>MEMORY</pattern>
+        <template>
+            Memory gets better with review, repetition, and organized notes. Use flashcards, repeat facts in your own words, and connect new information to what you already know.
+        </template>
+    </category>
+    <category>
+        <pattern>OTHER</pattern>
+        <template>
+            Focus on small steps: ask for help early, revise topics often, and set a clear study plan. Progress comes from regular effort and asking questions when something is unclear.
+        </template>
+    </category>
+    <category>
+        <pattern>GENERAL TIPS</pattern>
+        <template>
+            Practice regularly, organize your study sessions into short, focused blocks, and ask questions when you do not understand. Review your work often and celebrate small progress.
+        </template>
+    </category>
+    <category>
+        <pattern>THANK YOU</pattern>
+        <template>
+            You're welcome! Keep going and remember that every step forward matters.
+        </template>
+    </category>
+    <category>
+        <pattern>*</pattern>
+        <template>
+            I am here to help. Please answer the questions or tell me your area of concern like math, reading, writing, attention, or memory.
+        </template>
+    </category>
+</aiml>

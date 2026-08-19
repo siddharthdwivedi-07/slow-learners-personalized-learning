@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="section-head">
+        <h1>{{ heading }}</h1>
+    </div>
+
+    <div class="result-box">
+        <p>{{ message.replace('\n', '<br>') | safe }}</p>
+    </div>
+
+    {% if resources %}
+        <div class="resource-list">
+            <h2>Recommended online learning content for {{ topic_name if topic_name else 'your concern' }}</h2>
+            <div class="resource-grid">
+                {% for item in resources %}
+                    <a class="resource-card" href="{{ item.url }}" target="_blank" rel="noopener noreferrer">
+                        <strong>{{ item.title }}</strong>
+                        <p>{{ item.description }}</p>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+
+    {% if show_restart %}
+        <div class="action-row">
+            <a href="/" class="secondary-button">Start Over</a>
+        </div>
+    {% endif %}
+{% endblock %}

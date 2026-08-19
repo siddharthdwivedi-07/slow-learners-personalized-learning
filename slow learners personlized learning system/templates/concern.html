@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="section-head">
+        <h1>You're a candidate for extra support</h1>
+        <p>Select the area where you want the most help right now.</p>
+    </div>
+
+    <form method="post" action="/concern" class="form-panel">
+        <div class="form-row">
+            <label for="concern">Area of concern</label>
+            <select id="concern" name="concern" class="select-field">
+                {% for choice in concern_choices %}
+                    <option value="{{ choice }}">{{ choice|capitalize }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <button type="submit" class="primary-button">Get Remedial Tips</button>
+    </form>
+{% endblock %}
